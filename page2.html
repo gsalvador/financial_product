@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ingreso Cuenta</title>
+</head>
+<body>
+    <p id="page" hidden>p2</p>
+    <div class="form">
+        <div class="title">Cuenta</div>
+        <div class="subtitle">Vamos a crear su Cuenta</div>
+        <form id="formElem">
+            <div class="input-container ic1">
+                <input id="UserId" name="UserId" class="input" type="number" placeholder=" " required maxlength="10"/>
+                <div class="cut"></div>
+                <label for="UserId" class="placeholder">C&eacute;dula</label>
+            </div>
+            <div class="input-container ic1">
+                <input id="SavedMontlyAmount" name="SavedMontlyAmount" class="input" type="number" placeholder=" " required maxlength="10" />
+                <div class="cut"></div>
+                <label for="SavedMontlyAmount" class="placeholder">Monto Mensual</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="NumberOfPeriods" name="NumbeOfPeriods" class="input" type="number" placeholder=" " required maxlength="2" />
+                <div class="cut"></div>
+                <label for="NumberOfPeriods" class="placeholder">N&uacute;mero de Per&iacute;odos</label>
+            </div>
+            <div class="input-container ic1">
+                <input id="InterestRate" name="InterestRate" class="input" type="number" placeholder=" " required maxlength="6" step=".01" />
+                <div class="cut"></div>
+                <label for="InterestRate" class="placeholder">Tasa de Inter&eacute;s Anual</label>
+            </div>
+            <input type="submit" class="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+<footer>
+    <a class="button-anchor" href="./index.html">Volver</a>
+</footer>
+</html>

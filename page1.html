@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ingreso de Clientes</title>
+</head>
+<body>
+    <p id="page" hidden>p1</p>    
+    <div class="form">
+        <div class="title">Cliente</div>
+        <div class="subtitle">Vamos a crear su Cliente</div>
+        <form id="formElem">
+            <div class="input-container ic1">
+                <input id="name" name="name" class="input" type="text" placeholder=" " required maxlength="50"/>
+                <div class="cut"></div>
+                <label for="name" class="placeholder">Nombre</label>
+            </div>
+            <div class="input-container ic1">
+                <input id="id" name="id" class="input" type="number" placeholder=" " required maxlength="10" />
+                <div class="cut"></div>
+                <label for="id" class="placeholder">C&eacute;dula</label>
+            </div>
+            <input type="submit" class="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+<footer>
+    <a class="button-anchor" href="./index.html">Volver</a>
+</footer>
+</html>
